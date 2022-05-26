@@ -1,0 +1,39 @@
+<body>
+  <div class="flex-row">
+    <span>Default account:</span>
+    <span id="account-address"></span>
+  </div>
+  <div class="flex-column" style="align-items:flex-start">
+    <div class="flex-row">
+      <span># of USDT in your account:</span>
+      <span id="user-balance"></span>
+    </div>
+    <div class="flex-row">
+      <span># of KEEY in your account:</span>
+      <span id="user-balance-KEEY"></span>
+    </div>
+    <div class="flex-row">  
+      <span># of USDT to buy 1 KEEY:</span>
+      <span id="exchange-price"></span>
+    </div>
+    <div class="flex-row">
+      <span># of USDT currently approved:</span>
+      <span id="current-allowance"></span>
+    </div>
+    <div class="flex-row">
+      <span># of USDT to be approved:</span>
+      <input type="number" step="1e-18" id="new-allowance">
+      <button id="button-approve">Approve</button>
+    </div>
+    <div class="flex-row">
+      <span># of KEEY to buy:</span>
+      <input type="number" step="1e-18" id="buying-amount">
+      <button id="button-buy">Buy</button>
+    </div>
+    <button id="button-refresh">Refresh</button>
+  </div>
+  
+  <script src='https://cdn.jsdelivr.net/npm/bignumber.js@9.0.2/bignumber.min.js'></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
